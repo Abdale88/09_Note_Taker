@@ -13,6 +13,22 @@ module.exports = (app) => {
           } catch (err) {
             console.error(err)
           }
+
+    })
+
+    
+    app.post('/api/notes', (req, res) => {
+        let currentNote = req.body
+        currentNote.id = uniqueId();
+        ArrayOfObj.push(currentNote);
+
+       try {
+           const data = fs.writeFileSync('db/db.json', JSON.stringify(ArrayOfObj))
+           res.json(data);
+
+        } catch (err) {
+            console.error(err)
+        }
     })
 
 };
