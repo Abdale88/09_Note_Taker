@@ -47,7 +47,8 @@ cabdale989@gmail.com
 
 
 ## Here is the link to the deployed app
-    https://bsf-note-taker.herokuapp.com/
+
+https://bsf-note-taker.herokuapp.com/
      
     
 ## Screenshots
