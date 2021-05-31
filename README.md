@@ -44,6 +44,15 @@ Please email me if you need more info.
 cabdale989@gmail.com
 
 ![My gitHub]https://github.com/Abdale88
+
+
+## Here is the link to the deployed app
+    https://bsf-note-taker.herokuapp.com/
      
     
+## Screenshots
+
+![main](./images/main.png)
+
+![notes](./images/notes.png)
 
