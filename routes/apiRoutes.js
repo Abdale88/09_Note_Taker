@@ -30,5 +30,18 @@ module.exports = (app) => {
             console.error(err)
         }
     })
+    
+    app.delete('/api/notes/:id', (req, res) => {
+        const { id } = req.params;
+       ArrayOfObj = ArrayOfObj.filter(c => c.id !== id);
 
+       try {
+        fs.writeFileSync('db/db.json', JSON.stringify(ArrayOfObj))
+        
+        res.json(ArrayOfObj);
+
+     } catch (err) {
+         console.error(err)
+     }
+    });
 };
